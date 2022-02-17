@@ -22,6 +22,10 @@ button {
 button:active {
     opacity: 0.8;
 }
+button[disabled] {
+    opacity: 0.8;
+}
+ 
 
 .clear {
     background: transparent;

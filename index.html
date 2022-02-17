@@ -7,36 +7,24 @@
 </head>
 
 <body>
-    <p>Parágrafo</p>
-    <h1>Título grande</h1>
-    <b>Negrito</b>
-    <a>Link</a>
-    <input type="text" />
-    <input type="date" />
-    <input type="number" />
-    <input type="email" />
-    <input type="password" />
-    <button onclick="alert('Você clicou aqui')">Botao</button>
+    <form>
+        <div>
+            <div><label>Email</label></div>
+            <input type="email" name="email" placeholder="seu@email.com"/>
+        <div>
+            <div><label>Senha</label></div>
+            <input type="password" name="password" placeholder="Senha" />
+        </div>
+        <div>
+            <button type="button">Recuperar senha</button>
+        </div>
+        <div>
+            <button type="button">Entrar</button>
+        </div>
+        <div>
+            <button type="button">Registrar</button>
+        </div>
+    </form>
 </body>
-
-<style>
-    p {
-        color: green;
-    }
-    button {
-        background-color: blue;
-        color: white;
-        padding: 10px;
-        border: none;
-    }
-    body {
-        background: yellow;
-    }
-    h1 {
-        text-align: center;
-        text-decoration: underline;
-        font-size: 40px;
-    }
-</style>
 
 </html>

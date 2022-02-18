@@ -10,10 +10,13 @@
     <form>
         <div>
             <div><label>Email</label></div>
-            <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="validateFields()"/>
+            <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>
+            <div class="error" id="email-required-error">Email é obrigatório</div>
+            <div class="error" id="email-invalid-error">Email é inválido</div>
         <div>
             <div><label>Senha</label></div>
-            <input type="password" name="password" id="password" placeholder="Senha" onchange="validateFields()"/>
+            <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
+            <div class="error" id="password-required-error">Senha é obrigatória</div>
         </div>
         <div>
             <button type="button" class="clear" id="recover-password-button" disabled="true">Recuperar senha</button>

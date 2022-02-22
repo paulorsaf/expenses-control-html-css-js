@@ -8,12 +8,13 @@
 
 <body>
     <form>
-        <div>
+        <div class="form-field">
             <div><label>Email</label></div>
             <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>
             <div class="error" id="email-required-error">Email é obrigatório</div>
             <div class="error" id="email-invalid-error">Email é inválido</div>
-        <div>
+        </div>
+        <div class="form-field">
             <div><label>Senha</label></div>
             <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
             <div class="error" id="password-required-error">Senha é obrigatória</div>
@@ -31,7 +32,9 @@
 </body>
 
 <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="global.css">
 
 <script src="index.js"></script>
+<script src="validations.js"></script>
 
 </html>

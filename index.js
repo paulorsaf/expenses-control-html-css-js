@@ -6,7 +6,15 @@ function onChangeEmail() {
 function onChangePassword() {
     toggleButtonsDisable();
     togglePasswordErrors();
-} 
+}
+
+function login() {
+    window.location.href = "pages/home/home.html";
+}
+
+function register() {
+    window.location.href = "pages/register/register.html";
+}
 
 function toggleEmailErrors() {
     const email = form.email().value;

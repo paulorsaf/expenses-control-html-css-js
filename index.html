@@ -48,14 +48,6 @@
         appId: "1:1018055774945:web:bb0b24d7c0a4992e16dda0"
     };
     firebase.initializeApp(firebaseConfig);
-
-    console.log('antes');
-    firebase.auth().signInWithEmailAndPassword("paulorsaf@gmail.com", "123456").then(response => {
-        console.log('success', response)
-    }).catch(error => {
-        console.log('error', error)
-    });
-    console.log('depois')
 </script>
 
 </html>

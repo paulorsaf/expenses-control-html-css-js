@@ -8,6 +8,16 @@ body {
     align-items: center;
 }
 
+.form-field {
+    margin-bottom: 10px;
+}
+
+input,
+button {
+   padding: 10px;
+   width: -webkit-fill-available;
+}
+
 .loading {
     background: rgba(0, 0, 0, 0.5);
     position: fixed;

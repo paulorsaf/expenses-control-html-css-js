@@ -1,5 +1,5 @@
-Youtube: <a href="https://www.youtube.com/channel/UCtTfS4ffNNNhGoXzAdklwtQ" target="_blank">Paulo Alves Dev</a>
-Discord: <a href="https://discord.gg/yy2kFbgg2J">Convite</a>
+* Youtube: <a href="https://www.youtube.com/channel/UCtTfS4ffNNNhGoXzAdklwtQ" target="_blank">Paulo Alves Dev</a>
+* Discord: <a href="https://discord.gg/yy2kFbgg2J">Convite</a>
 
 # Sobre o Projeto como um todo:
 

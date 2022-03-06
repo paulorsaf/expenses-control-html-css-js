@@ -9,18 +9,38 @@
     <form>
         <div class="form-field">
             <div><label>Email</label></div>
-            <input type="email" placeholder="seu@email.com"/>
+            <input type="email" placeholder="seu@email.com"
+                onchange="onChangeEmail()" id="email"/>
+            <div class="error" id="email-required-error">
+                Email é obrigatório
+            </div>
+            <div class="error" id="email-invalid-error">
+                Email é inválido
+            </div>
         </div>
         <div class="form-field">
             <div><label>Senha</label></div>
-            <input type="password" placeholder="Senha"/>
+            <input type="password" placeholder="Senha"
+                id="password" onchange="onChangePassword()"/>
+            <div class="error" id="password-required-error">
+                Senha é obrigatório
+            </div>
+            <div class="error" id="password-min-length-error">
+                Senha deve ter pelo menos 6 caracteres
+            </div>
         </div>
         <div class="form-field">
             <div><label>Confirmar senha</label></div>
-            <input type="password" placeholder="Confirmar senha"/>
+            <input type="password" placeholder="Confirmar senha"
+                id="confirmPassword" onchange="onChangeConfirmPassword()"/>
+            <div class="error" id="password-doesnt-match-error">
+                Senha e Confirmar senha devem ser iguais
+            </div>
         </div>
         <div>
-            <button type="button" class="solid">Registrar</button>
+            <button type="button" class="solid" disabled="true" id="register-button">
+                Registrar
+            </button>
         </div>
         <div>
             <button type="button" class="clear">Login</button>
@@ -30,5 +50,8 @@
 
 <link rel="stylesheet" href="../../global.css">
 <link rel="stylesheet" href="register.css">
+
+<script src="register.js"></script>
+<script src="../../validations.js"></script>
 
 </html>

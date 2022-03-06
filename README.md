@@ -1,3 +1,6 @@
+Youtube: <a href="https://www.youtube.com/channel/UCtTfS4ffNNNhGoXzAdklwtQ" target="_blank">Paulo Alves Dev</a>
+Discord: <a href="https://discord.gg/yy2kFbgg2J">Convite</a>
+
 # Sobre o Projeto como um todo:
 
 A ideia desse projeto é criar a mesma aplicação utilizando várias tecnologias diferentes. O que vamos criar é uma aplicação de controle de gastos com login com email e senha, cadastro de usuário e um CRUD (Criar, Ler, Atualizar e Remover) de receitas e despesas.

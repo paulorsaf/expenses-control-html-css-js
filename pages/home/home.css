@@ -1,0 +1,10 @@
+body {
+    height: 100vh;
+}
+
+header {
+    text-align: right;
+}
+header button {
+    width: auto;
+}

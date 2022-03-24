@@ -6,15 +6,28 @@ function logout() {
     })
 }
 
-findTransactions();
+firebase.auth().onAuthStateChanged(user => {
+    if (user){
+        findTransactions(user);
+    }
+})
 
-function findTransactions() {
+function findTransactions(user) {
+    showLoading();
     firebase.firestore()
         .collection('transactions')
+        .where('user.uid', '==', user.uid)
+        .orderBy('date', 'desc')
         .get()
         .then(snapshot => {
+            hideLoading();
             const transactions = snapshot.docs.map(doc => doc.data());
             addTransactionsToScreen(transactions);
+        })
+        .catch(error => {
+            hideLoading();
+            console.log(error);
+            alert('Erro ao recuperar transacoes');
         })
 }
 

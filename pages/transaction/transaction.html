@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Transaçao - Controle de gastos</title>
+
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <button type="button" class="clear" onclick="logout()">
+            Sair
+        </button>
+    </header>
+    <main class="centralize">
+        <form>
+            <div class="form-field">
+                <div><label>Transaçao</label></div>
+                <input type="radio" name="type" checked id="expense">
+                <label for="expense">Despesa</label>
+                <input type="radio" name="type" id="income">
+                <label for="income">Receita</label>
+            </div>
+            <div class="form-field">
+                <div><label>Data da transaçao</label></div>
+                <input type="date">
+            </div>
+            <div class="form-field">
+                <div><label>Moeda</label></div>
+                <select>
+                    <option>Dólar</option>
+                    <option>Euro</option>
+                    <option selected>Real</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <div><label>Valor</label></div>
+                <input type="number">
+            </div>
+            <div class="form-field">
+                <div><label>Tipo de transaçao</label></div>
+                <select>
+                    <option>-- Selecione um tipo de transaçao --</option>
+                    <option>Acomodaçao</option>
+                    <option>Alimentaçao</option>
+                    <option>Outros</option>
+                    <option>Salário</option>
+                    <option>Supermercado</option>
+                    <option>Transporte</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <div><label>Descriçao</label></div>
+                <input type="text">
+            </div>
+            <button type="button" class="solid">Salvar</button>
+            <button type="button" class="clear">Cancelar</button>
+        </form>
+    </main>
+</body>
+
+<link rel="stylesheet" href="../../global.css">
+<link rel="stylesheet" href="transaction.css">
+
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+<script src="../../firebase-init.js"></script>
+<script src="../../auth-guard.js"></script>
+<script src="../../loading.js"></script>
+<script src="transaction.js"></script>
+
+</html>

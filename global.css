@@ -3,6 +3,13 @@ body {
     background: rgb(45, 211, 111);
 }
 
+header {
+    text-align: right;
+}
+header button {
+    width: auto;
+}
+
 .centralize {
     display: flex;
     justify-content: center;
@@ -14,9 +21,13 @@ body {
 }
 
 input,
-button {
+button,
+select {
    padding: 10px;
    width: -webkit-fill-available;
+}
+input[type="radio"] {
+    width: auto;
 }
 
 .loading {

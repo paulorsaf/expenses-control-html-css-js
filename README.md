@@ -14,7 +14,6 @@ A branch master contém tudo o que foi desenvolvido no projeto até aqui. Cada p
 # Tecnologias utilizadas nesse repositório
 
 * FRONTEND: HTML, Javascript e CSS puros
-* BACKEND: NodeJs
 * AUTENTICACAO: Firebase authentication
 * BANCO DE DADOS: Firebase firestore
 

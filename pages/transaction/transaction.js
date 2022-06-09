@@ -1,7 +1,11 @@
-if (!isNewTransaction()) {
-    const uid = getTransactionUid();
-    findTransactionByUid(uid);
-}
+firebase.auth().onAuthStateChanged(user => {
+    if (user){
+        if (!isNewTransaction()) {
+            const uid = getTransactionUid();
+            findTransactionByUid(uid);
+        }
+    }
+})
 
 function getTransactionUid() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -99,7 +103,8 @@ function createTransaction() {
         description: form.description().value,
         user: {
             uid: firebase.auth().currentUser.uid
-        }
+        },
+        uid: getTransactionUid()
     };
 }
 

@@ -20,7 +20,9 @@ function login() {
 
 function getErrorMessage(error) {
     if (error.code == "auth/user-not-found") {
-        return "Usuário nao encontrado";
+        return "Usuário não encontrado";
+    } else if (error.code == "auth/wrong-password") {
+        return "Senha não confere";
     }
     return error.message;
 }
